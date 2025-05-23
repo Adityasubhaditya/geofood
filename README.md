@@ -32,19 +32,21 @@ Longitude
 1. Histogram of Order Values
 Displays the distribution of order values, providing insights into the range and frequency of orders.
 
-2. Scatter Plot (Latitude vs Longitude)
+![Image alt](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192138.png?raw=true)
+
+3. Scatter Plot (Latitude vs Longitude)
 A visual representation of order locations to understand distribution patterns across New Delhi.
 
-3. Profit Distribution
+4. Profit Distribution
 Histogram showcasing the distribution of profit per order, including a line for the mean profit.
 
-4. Proportion of Costs Pie Chart
+5. Proportion of Costs Pie Chart
 Breakdown of total costs such as delivery fees, payment processing fees, and discounts.
 
-5. Heatmap of Delivery Locations
+6. Heatmap of Delivery Locations
 Interactive visualization created using Folium to show high-density order locations in New Delhi.
 
-6. Delivery Zones
+7. Delivery Zones
 Mapping of defined delivery zones to understand area-based delivery performance.
 
 Analysis Summary:-
