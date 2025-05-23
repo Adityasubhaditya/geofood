@@ -52,6 +52,4 @@ Total Orders: Displayed as a metric for understanding order volume.
 Total Revenue, Costs, and Profit: Calculated to measure the overall financial performance.
 Simulation of Profitability: Estimated profitability based on recommended commission and discount percentages.
 
-Contact:-
-Feel free to reach out with questions or contributions:
-Email: adityasubhaditya@example.com
+
