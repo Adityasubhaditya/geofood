@@ -38,20 +38,12 @@ GeoFood is a data analysis project aimed at examining food delivery trends in Ne
 ![Order Value Box Plot](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192405.png?raw=true)  
 
 ### 6. Geospatial Order Density
-[INSERT SCATTER PLOT IMAGE HERE]
+![Order Location Scatter Plot](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192347.png?raw=true)
 Figure: Order Concentration (Latitude 28.6–28.7, Longitude 77.1–77.2)
 
 ### 7. Cost Structure Breakdown
-[INSERT PIE CHART IMAGE HERE]
+![Cost Breakdown Pie Chart](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192210.png?raw=true)
 Figure: Cost Distribution (Discounts 74.9%, Delivery Fees 12.8%, Payment Processing 12.3%)
-
-Critical Issue: Discounts consume 3/4 of total costs.
-
-Solution: Implement dynamic discounts (max 30% for high-value orders).
-
-
-
-
 
 Hotspots: Connaught Place, Saket.
 
