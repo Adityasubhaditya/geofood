@@ -1,57 +1,68 @@
-# GeoFood: Food Delivery Data Analysis
+# GeoFood: Food Delivery Data Analysis  
 
-## Overview:-
-GeoFood is a data analysis project aimed at examining food delivery trends in New Delhi. This project utilizes various Python libraries to clean, analyze, and visualize data to extract actionable insights. The analyses focus on profitability, cost distribution, and delivery zones using both traditional data visualization and geospatial analysis techniques.
+## Overview  
+GeoFood is a data analysis project aimed at examining food delivery trends in New Delhi. This project utilizes Python libraries to clean, analyze, and visualize data to extract actionable insights. The analyses focus on profitability, cost distribution, order values, and delivery zones using both traditional data visualization and geospatial techniques.  
 
-## Features:-
-- **Data Cleaning & Transformation**: Handles raw data preparation and conversion for analysis.
-- **Financial Analysis**: Computes order-level revenue, total costs, and overall profit.
-- **Data Visualizations**: Generates detailed plots and charts to understand financial metrics and distribution.
-- **Geospatial Analysis**: Creates heatmaps and delivery zone visualizations to identify delivery hotspots.
+## Key Insights from Visualizations  
 
-## Technologies Used:-
-- **Programming Language**: Python 3.x
-- **Libraries**: 
-  - `pandas` for data manipulation and analysis
-  - `matplotlib` and `seaborn` for data visualization
-  - `folium` for interactive maps and geospatial analysis
-  - `geopandas` for handling geographical data
+### 1. Profit Distribution per Order  
+- The histogram reveals the spread of profit per order, ranging from significant losses (-1000 INR) to moderate profits (200 INR).  
+- Most orders cluster around the breakeven point (0 INR), indicating thin margins.  
 
-## Data Input :-
-Order Date and Time
-Delivery Date and Time
-Order Value
-Discounts and Offers
-Delivery Fee
-Payment Processing Fee
-Commission Fee
-Latitude
-Longitude
+![Profit Distribution per Order](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192138.png?raw=true)  
 
-## Visualizations and Outputs:-
-1. Histogram of Order Values
-Displays the distribution of order values, providing insights into the range and frequency of orders.
+### 2. Total Revenue, Costs, and Profit  
+- **Total Revenue**: ~150,000 INR  
+- **Total Costs**: ~100,000 INR  
+- **Total Profit**: ~50,000 INR  
+- Costs nearly offset revenue, emphasizing the need for cost optimization.  
 
-![Image alt](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192138.png?raw=true)
+![Total Financial Metrics](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192240.png?raw=true)  
 
-3. Scatter Plot (Latitude vs Longitude)
-A visual representation of order locations to understand distribution patterns across New Delhi.
+### 3. Profitability Comparison: Actual vs. Recommended Rates  
+- Adjusting discounts and commissions could shift profitability density toward higher profits (0–250 INR range).  
+- Current profitability is skewed toward lower margins or losses.  
 
-4. Profit Distribution
-Histogram showcasing the distribution of profit per order, including a line for the mean profit.
+![Profitability Comparison](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192304.png?raw=true)  
 
-5. Proportion of Costs Pie Chart
-Breakdown of total costs such as delivery fees, payment processing fees, and discounts.
+### 4. Distribution of Order Values  
+- Most orders fall between 250–1000 INR, with frequencies peaking at ~40 orders for lower values.  
+- Higher-order values (>1500 INR) are rare but may contribute disproportionately to revenue.  
 
-6. Heatmap of Delivery Locations
-Interactive visualization created using Folium to show high-density order locations in New Delhi.
+![Order Value Distribution](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192326.png?raw=true)  
 
-7. Delivery Zones
-Mapping of defined delivery zones to understand area-based delivery performance.
+### 5. Box Plot of Order Values  
+- Median order value lies near 750 INR.  
+- Significant outliers above 1500 INR suggest occasional high-value orders.  
 
-Analysis Summary:-
-Total Orders: Displayed as a metric for understanding order volume.
-Total Revenue, Costs, and Profit: Calculated to measure the overall financial performance.
-Simulation of Profitability: Estimated profitability based on recommended commission and discount percentages.
+![Order Value Box Plot](https://github.com/Adityasubhaditya/geofood/blob/main/Screenshot%202025-05-23%20192405.png?raw=true)  
 
+## Features  
+- **Data Cleaning & Transformation**: Handles missing values, outliers, and geospatial conversions.  
+- **Financial Analysis**: Computes revenue, costs (delivery fees, commissions), and profit at order and aggregate levels.  
+- **Visualizations**:  
+  - Histograms and box plots for order values and profitability.  
+  - Comparative density plots for profitability scenarios.  
+  - Interactive heatmaps (Folium) for delivery location density.  
+- **Geospatial Analysis**: Maps delivery zones and hotspots in New Delhi.  
 
+## Technologies Used  
+- **Python 3.x**  
+- **Libraries**:  
+  - `pandas`, `numpy` for data manipulation.  
+  - `matplotlib`, `seaborn` for visualizations.  
+  - `folium`, `geopandas` for geospatial mapping.  
+
+## Data Input  
+- Order/delivery timestamps, order value (INR).  
+- Fees: Delivery, payment processing, commissions.  
+- Discounts/offers applied.  
+- Latitude/longitude for geospatial analysis.  
+
+## Recommendations  
+1. **Optimize Discounts/Commissions**: Use simulation results to adjust rates and improve profitability.  
+2. **Target High-Value Orders**: Focus marketing on orders >1500 INR to boost revenue.  
+3. **Cost Control**: Reduce losses in orders with negative profit (e.g., delivery fee waivers).  
+
+---  
+*Visualizations and analysis derived from GeoFood project data (New Delhi region).*
